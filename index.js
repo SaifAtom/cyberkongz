@@ -37,11 +37,11 @@ await posClient.init({
 });
 
 //run withdraw_exit_on_index
-const erc721Token = posClient.erc721('0x8884fbca23d2c64a7d526731ac93d2d1c9a428fb', true)
+const erc721Token = posClient.erc721('0x7EA3Cca10668B8346aeC0bf1844A49e995527c8B', true)
 console.log(erc721Token)
 const result = await erc721Token.withdrawExitOnIndex(
   '0x745de6139122008ae474d17724b4741cf6b887bd2707e459053ede7ee821e1e5',
-  0
+  1
 )
 
 const txHash = await result.getTransactionHash()
